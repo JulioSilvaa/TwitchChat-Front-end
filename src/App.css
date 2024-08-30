@@ -1,0 +1,160 @@
+/* Importação da fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Aplicar a fonte globalmente */
+body {
+  font-family: 'Roboto', sans-serif;
+  /* Fonte elegante */
+  color: #333;
+  /* Cor do texto */
+  background-color: #f0f0f0;
+  /* Cor de fundo geral */
+  margin: 0;
+  /* Remove margens padrão */
+  padding: 0;
+  /* Remove espaçamentos padrão */
+}
+
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  /* Inverte a ordem das mensagens visualmente */
+  overflow-y: auto;
+  /* Adiciona uma barra de rolagem se necessário */
+  max-height: 500px;
+  /* Altura máxima da janela de chat */
+  padding: 10px;
+  /* Espaçamento interno */
+  background-color: #f0f0f0;
+  /* Cor de fundo da janela de chat */
+  border: 1px solid #ddd;
+  /* Borda leve ao redor da janela */
+  border-radius: 8px;
+  /* Cantos arredondados */
+  font-family: Arial, sans-serif;
+  /* Fonte padrão */
+}
+
+/* Estilo para o título da página */
+h1 {
+  font-size: 32px;
+  /* Tamanho da fonte do título */
+  color: #333;
+  /* Cor do texto */
+  margin-bottom: 20px;
+  /* Espaçamento abaixo do título */
+  margin-left: 12px;
+}
+
+.chat-message {
+  background-color: #ffffff;
+  /* Cor de fundo das mensagens */
+  border: 1px solid #ddd;
+  /* Borda das mensagens */
+  border-radius: 5px;
+  /* Cantos arredondados das mensagens */
+  padding: 10px;
+  /* Espaçamento interno das mensagens */
+  margin-bottom: 10px;
+  /* Espaço entre as mensagens */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  /* Sombra leve */
+  transition: background-color 0.3s, box-shadow 0.3s;
+  /* Transição suave para efeito hover */
+}
+
+.chat-message strong {
+  color: #333;
+  /* Cor do texto do usuário */
+}
+
+/* Estilo para a mensagem de notificação */
+.chat-message.notification {
+  background-color: #ffdddd;
+  /* Cor de fundo vermelha clara */
+  color: #d8000c;
+  /* Cor do texto vermelha */
+  font-weight: bold;
+  /* Texto em negrito */
+}
+
+.chat-message:hover {
+  background-color: #f9f9f9;
+  /* Cor de fundo das mensagens ao passar o mouse */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra mais intensa ao passar o mouse */
+}
+
+/* Estilo para o formulário */
+form {
+  display: flex;
+  align-items: center;
+  /* Alinha verticalmente o campo e o botão */
+  gap: 10px;
+  /* Espaço entre o campo e o botão */
+  margin-bottom: 20px;
+  /* Espaço abaixo do formulário */
+  padding: 12px;
+  max-width: 80%;
+}
+
+/* Estilo para o campo de entrada */
+input {
+  border: 2px solid #6c63ff;
+  /* Borda colorida */
+  border-radius: 5px;
+  /* Bordas arredondadas */
+  padding: 10px;
+  /* Espaçamento interno */
+  font-size: 16px;
+  /* Tamanho da fonte */
+  color: #333;
+  /* Cor do texto */
+  outline: none;
+  /* Remove a borda de foco padrão */
+  transition: border-color 0.3s ease;
+  /* Transição suave para a cor da borda */
+  flex: 1;
+  /* Faz com que o campo ocupe o espaço disponível */
+}
+
+/* Estilo para o campo de entrada ao focar */
+input:focus {
+  border-color: #5750e1;
+  /* Cor da borda ao focar */
+  box-shadow: 0 0 5px rgba(87, 80, 225, 0.5);
+  /* Sombra ao focar */
+}
+
+/* Estilo para o botão de conexão */
+button {
+  background-color: #6c63ff;
+  /* Cor de fundo */
+  border: none;
+  /* Remove a borda padrão */
+  color: white;
+  /* Cor do texto */
+  padding: 10px 20px;
+  /* Espaçamento interno */
+  text-align: center;
+  /* Alinhamento do texto */
+  text-decoration: none;
+  /* Remove sublinhado */
+  display: inline-block;
+  /* Melhora a exibição */
+  font-size: 16px;
+  /* Tamanho da fonte */
+  margin: 4px 2px;
+  /* Margens */
+  cursor: pointer;
+  /* Mostra o cursor de ponteiro */
+  border-radius: 5px;
+  /* Bordas arredondadas */
+  transition: background-color 0.3s ease;
+  /* Transição suave para a cor de fundo */
+}
+
+button:hover {
+  background-color: #5750e1;
+  /* Cor de fundo ao passar o mouse */
+}
